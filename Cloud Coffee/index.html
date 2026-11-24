@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CloudCafe</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            CloudCafe.
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="why-choose-us.html">
+                    Why Choose Us
+                </a>
+            </li>
+
+            <li>
+                <a href="menu.html">
+                    Menu
+                </a>
+            </li>
+
+            <li>
+                <a href="staff.html">
+                    Staff
+                </a>
+            </li>
+
+            <li>
+                <a href="specials.html">
+                    Our Specials
+                </a>
+            </li>
+
+            <li>
+                <a href="services.html">
+                    Services
+                </a>
+            </li>
+
+            <li>
+                <a href="careers.html">
+                    Careers
+                </a>
+            </li>
+
+            <li>
+                <a href="contact.html">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+        <div>
+
+            <button
+            class="cart-btn"
+            onclick="window.location.href='cart.html'">
+                Cart
+            </button>
+
+           <button
+class="signup-btn"
+onclick="window.location.href='signup.html'">
+Sign Up
+</button>
+
+<button
+class="cart-btn"
+onclick="window.location.href='login.html'">
+Login
+</button>
+
+        </div>
+
+    </nav>
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>
+                Your Daily Coffee Above The Clouds
+            </h1>
+
+            <p>
+                Discover premium coffee,
+                fresh desserts and a cozy atmosphere.
+            </p>
+
+            <button
+            class="primary-btn"
+            onclick="window.location.href='menu.html'">
+                All Products
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- PRODUCTS -->
+
+    <section class="products">
+
+        <h2>Our Products</h2>
+
+        <div class="product-grid">
+
+            <div class="card">
+
+                <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=700"
+                alt="Coffee">
+
+                <h3>Americano</h3>
+
+                <p>
+                    Rich espresso coffee.
+                </p>
+
+                <span>$4.99</span>
+
+                <button onclick="addToCart('Americano',4.99)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700"
+                alt="Coffee">
+
+                <h3>Cappuccino</h3>
+
+                <p>
+                    Creamy milk and espresso.
+                </p>
+
+                <span>$5.99</span>
+
+                <button onclick="addToCart('Cappuccino',5.99)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+            <div class="card">
+
+                <img
+                src="https://images.unsplash.com/photo-1571115177098-24ec42ed204d?w=700"
+                alt="Cake">
+
+                <h3>Tiramisu</h3>
+
+                <p>
+                    Italian coffee dessert.
+                </p>
+
+                <span>$6.99</span>
+
+                <button onclick="addToCart('Tiramisu',6.99)">
+                    Add To Cart
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- NEWSLETTER -->
+
+    <section class="newsletter">
+
+        <h2>Subscribe To Our Newsletter</h2>
+
+        <input
+        type="email"
+        id="email"
+        placeholder="Enter email">
+
+        <button onclick="subscribeNewsletter()">
+            Subscribe
+        </button>
+
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <h3>CloudCafe.</h3>
+
+        <p>
+            Your favorite coffee destination.
+        </p>
+
+    </footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

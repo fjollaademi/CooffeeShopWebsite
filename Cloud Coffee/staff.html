@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Staff</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+
+.team{
+padding:80px;
+display:grid;
+grid-template-columns:
+repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.member{
+background:white;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+.member img{
+width:150px;
+height:150px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1 style="text-align:center;margin-top:40px;">
+Meet Our Team
+</h1>
+
+<section class="team">
+
+<div class="member">
+
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+
+<h2>Emma Johnson</h2>
+
+<p>Store Manager</p>
+
+</div>
+
+<div class="member">
+
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+
+<h2>Michael Smith</h2>
+
+<p>Head Barista</p>
+
+</div>
+
+<div class="member">
+
+<img src="https://randomuser.me/api/portraits/women/68.jpg">
+
+<h2>Sophia Brown</h2>
+
+<p>Pastry Chef</p>
+
+</div>
+
+</section>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Checkout</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+<style>
+
+.checkout{
+
+padding:60px;
+max-width:700px;
+margin:auto;
+
+}
+
+.checkout form{
+
+display:flex;
+flex-direction:column;
+gap:20px;
+
+}
+
+.checkout input{
+
+padding:15px;
+
+}
+
+.checkout button{
+
+padding:15px;
+
+background:#4b2e2e;
+
+color:white;
+
+border:none;
+
+cursor:pointer;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="checkout">
+
+<h1>Checkout</h1>
+
+<form id="checkoutForm">
+
+<input
+type="text"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+placeholder="Email"
+required>
+
+<input
+type="text"
+placeholder="Address"
+required>
+
+<input
+type="text"
+placeholder="City"
+required>
+
+<button type="submit">
+
+Place Order
+
+</button>
+
+</form>
+
+</div>
+
+<script>
+
+document
+.getElementById("checkoutForm")
+.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+localStorage.removeItem("cart");
+
+alert(
+"Order placed successfully!"
+);
+
+window.location.href =
+"order-success.html";
+
+});
+
+</script>
+
+</body>
+</html>
